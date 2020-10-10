@@ -118,9 +118,13 @@ with open(file_to_save, "w") as txt_file:
         #definte a variable where you store the maximum votes cast accross all canidates,
 #-------------------------------------------------------------------------------------------------------------------            
     # 7: Print the county with the largest turnout to the terminal.
-    largest_county_results = (f'{largest_county}: ({largest_county_vote:,})\n\n')
+    #largest_county_results = (f'{largest_county}: ({largest_county_vote:,})\n\n')
+    largest_county_results = (
+        f'\n-------------------------\n'
+        f'Largest County Turnout: {largest_county}\n'
+        f'-------------------------\n')
     print(largest_county_results)
-
+    
     # 8: Save the county with the largest turnout to a text file.
     txt_file.write(largest_county_results)
 
